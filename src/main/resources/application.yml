@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: springboot
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3309/sb_study_jh
+    username: root
+    password: 1q2w3e4r
+
+jwt:
+  secret: 764a9fc89384a361f9d29adb7abd9471b37068acf7d0b9824cb4303d82f448956b22c1e57215edbbfd6a00a81f1d1cfa542ddeb92adb9c6b61982586198f8cb6
+
+springdoc:
+  swagger-ui:
+    path: doc
+
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.korit.springboot.entity
